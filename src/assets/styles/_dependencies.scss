@@ -5,3 +5,10 @@
 
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
+@use "bootstrap/scss/bootstrap";
+@use "bootstrap-icons/font/bootstrap-icons" with (
+  $bootstrap-icons-font-src: (
+    url("npm:bootstrap-icons/font/fonts/bootstrap-icons.woff2") format("woff2"),
+    url("npm:bootstrap-icons/font/fonts/bootstrap-icons.woff") format("woff")
+  )
+);
