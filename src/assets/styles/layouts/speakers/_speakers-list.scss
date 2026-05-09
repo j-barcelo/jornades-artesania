@@ -1,0 +1,19 @@
+@use "../../mixins" as *;
+
+.speakers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--bs-gutter-y) var(--bs-gutter-x);
+
+  .speakers-card {
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: calc((100% - var(--bs-gutter-x)) / 2 - 0.1px);
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: calc((100% - (var(--bs-gutter-x) * 2)) / 3 - 0.1px);
+    }
+  }
+}

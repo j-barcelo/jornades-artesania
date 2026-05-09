@@ -1,0 +1,18 @@
+@use "../bootstrap-variables" as bs;
+
+.cta {
+  text-wrap-style: balance;
+  background-color: bs.$light;
+
+  &--mod {
+    background-color: color-mix(in srgb, bs.$body-bg, bs.$primary 7%);
+  }
+
+  &__btn {
+    transition: transform 0.3s ease;
+
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}

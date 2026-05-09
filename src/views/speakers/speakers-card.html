@@ -1,0 +1,14 @@
+
+<article class="speakers-card card border-0">
+    <picture class="rounded overflow-hidden">
+        <source type="image/avif" srcset="{{ img }}?as=avif&width=500">
+        <source type="image/webp" srcset="{{ img }}?as=webp&width=500">
+        <img src="{{ img }}?width=500" class="speakers-card__img card-img-top rounded" alt="{{ alt }}">
+    </picture>
+    <div class="card-body">
+        <p class="fs-5">{{ label }}</p>
+        <h2 class="card-title h5">{{ nom }}</h2>
+        <p class="card-text">{{ descripcio }}</p>
+        <a href="#" class="text-decoration-none fw-semibold">Veure trajectòria <i class="bi bi-arrow-right"></i></a>
+    </div>
+</article>

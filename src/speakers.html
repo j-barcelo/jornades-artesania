@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="ca">
+  <include src="./views/head.html">
+  {
+      "title": "Ponents | Jornades d'artesania",
+      "description": "Descobreix les ments brillants i les mans expertes que estan redefinint el valor del fet a mà a Mallorca."
+  }
+  </include>
+  <body>
+    <include src="./views/header.html">{ "activePage": "speakers" }</include>
+
+    <main>
+      <section class="py-5 container">
+        <div class="row my-4">
+          <header class="col-md-6 mt-5">
+            <h1>Els nostres ponents</h1>
+            <p>
+              Descobreix les ments brillants i les mans expertes que estan redefinint el valor del fet a mà a Mallorca. Una selecció d'especialistes artesans, dissenyadors i pensadors.
+            </p>
+          </header>
+          <include src="./views/speakers/speakers-list.html"></include>
+        </div>
+      </section>
+      <include src="./views/speakers/cta.html"></include>
+    </main>
+
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

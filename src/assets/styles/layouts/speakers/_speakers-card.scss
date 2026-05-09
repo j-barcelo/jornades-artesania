@@ -1,0 +1,17 @@
+@use "../../functions" as *;
+
+.speakers-card {
+  &:nth-child(3n+2) {
+    transform: translateY(to-rem(32));
+  }
+
+  &__img {
+    object-fit: cover;
+    transform-origin: center center;
+    transition: transform 0.4s ease;
+  }
+
+  &:hover .speakers-card__img {
+    transform: scale(1.05);
+  }
+}

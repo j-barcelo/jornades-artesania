@@ -16,7 +16,10 @@
 @use "base";
 @use "layouts/navbar";
 @use "layouts/footer";
+@use "layouts/cta";
 @use "layouts/home/hero";
+@use "layouts/speakers/speakers-card";
+@use "layouts/speakers/speakers-list";
 
 /**
  * Do NOT include anything else in this file!
