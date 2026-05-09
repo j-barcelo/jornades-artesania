@@ -1,10 +1,1 @@
-@use "sass:color";
-
-$font-family-sans-serif:
-  -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue",
-  arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
-$mq-min-width: 420px;
+// La majoria de les variables d'aquest projecte es troben a bootstrap-variables

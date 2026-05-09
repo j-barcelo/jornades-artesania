@@ -16,6 +16,10 @@ export default {
       "^[a-z][a-z0-9-]*$",
       { "message": "Les variables han de ser kebab-case" }
     ],
+    "container-name-pattern": [
+      "^[a-z][a-z0-9-]*$|^#{\\$[a-z][a-z0-9-]*}$",
+      { "message": "El nom del contenidor ha de ser kebab-case o una variable Sass" }
+    ],
 
     "selector-max-id": 0,
     "declaration-no-important": true,
@@ -46,7 +50,7 @@ export default {
       "gap", "row-gap", "column-gap", "width", "height", "min-width", "max-width",
       "min-height", "max-height"],
       {
-        "ignoreValues": ["0", "auto", "inherit", "unset", "none", "fit-content", "100%", "100vw", "100vh"],
+        "ignoreValues": ["0", "auto", "inherit", "unset", "none", "fit-content", "/^\\d+(?:\\.\\d+)?%$/", "/^\\d+(?:\\.\\d+)?vh$/", "/^\\d+(?:\\.\\d+)?vw$/"],
         "message": "Utilitza la funció to-rem() en lloc de valors fixos en px"
       }
     ],

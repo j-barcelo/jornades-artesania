@@ -1,0 +1,88 @@
+@use 'functions' as *;
+
+$spacer: to-rem(20);
+$enable-shadows: false;
+$enable-rounded: true;
+
+/* ══════════════════════════════════════
+    Breakpoints
+   ══════════════════════════════════════ */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1450px
+);
+
+/* ══════════════════════════════════════
+    Paleta de colors
+   ══════════════════════════════════════ */
+$primary: #823B18;
+$secondary: #df9d7d;
+$light: #fff;
+$light-mod: #fcf9f4;
+$dark: #000;
+$body-bg: $light-mod;
+$body-color: $dark;
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "light-mod": $light-mod,
+  "light": $light,
+  "dark": $dark
+);
+
+/* ══════════════════════════════════════
+    Tipografia
+   ══════════════════════════════════════ */
+$font-family-base: 'Manrope', sans-serif;
+$font-size-base: to-rem(16);
+$line-height-base: 1.25;
+$headings-font-family: 'Noto Serif', serif;
+$headings-font-weight: 500;
+$h1-font-size: to-rem(68);
+$h2-font-size: to-rem(53);
+$h3-font-size: to-rem(42);
+$h4-font-size: to-rem(33);
+$h5-font-size: to-rem(26);
+$h6-font-size: to-rem(20);
+$display-font-sizes: (
+  1: to-rem(110),
+  2: to-rem(68),
+  3: to-rem(53),
+  4: to-rem(42),
+  5: to-rem(33),
+  6: to-rem(26)
+);
+$font-sizes: (
+  1: to-rem(33),
+  2: to-rem(26),
+  3: to-rem(20),
+  4: to-rem(16),
+  5: to-rem(12),
+  6: to-rem(10)
+);
+
+/* ══════════════════════════════════════
+    Dimensions
+   ══════════════════════════════════════ */
+$grid-gutter-width: to-rem(40);
+$container-max-widths: (
+  sm: to-rem(540),
+  md: to-rem(720),
+  lg: to-rem(940),
+  xl: to-rem(1140),
+  xxl: to-rem(1250)
+);
+
+/* ══════════════════════════════════════
+    Border-radius
+   ══════════════════════════════════════ */
+$border-radius: to-rem(10);
+$border-radius-sm: to-rem(5);
+$border-radius-lg: to-rem(20);
+$btn-border-radius: to-rem(5);
+$btn-border-radius-sm: to-rem(5);
+$btn-border-radius-lg: to-rem(5);

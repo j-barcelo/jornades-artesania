@@ -23,7 +23,8 @@
     }
   },
   "sass": {
-    "quietDeps": true
+    "quietDeps": true,
+    "silenceDeprecations": ["import"]
   },
   "repository": {
     "type": "git",

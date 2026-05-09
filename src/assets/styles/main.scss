@@ -13,7 +13,10 @@
  * It's a best practice to use a different partial for each page
  */
 
-@use "layouts/home";
+@use "base";
+@use "layouts/navbar";
+@use "layouts/footer";
+@use "layouts/home/hero";
 
 /**
  * Do NOT include anything else in this file!

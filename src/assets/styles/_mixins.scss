@@ -1,0 +1,9 @@
+@use "sass:map";
+@use "bootstrap-variables" as bs;
+@use "bootstrap/scss/mixins" as mixin;
+
+@mixin media-breakpoint-up($name, $breakpoints: bs.$grid-breakpoints) {
+  @include mixin.media-breakpoint-up($name, $breakpoints) {
+      @content;
+  }
+}

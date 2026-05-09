@@ -1,0 +1,60 @@
+@use "sass:color";
+@use "../bootstrap-variables" as bs;
+@use "../functions" as *;
+@use "../mixins" as *;
+
+.menu {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: to-rem(64);
+  background: bs.$light;
+
+  &__navbar {
+    background-color: rgba(bs.$light, 0.7);
+    backdrop-filter: blur(30);
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: bs.$light;
+    }
+  }
+
+  &__brand {
+    max-width: calc(100% - to-rem(74));
+    font-family: bs.$headings-font-family;
+    text-wrap: auto
+  }
+
+  &__link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-block: to-rem(12);
+    padding-inline-start: to-rem(16);
+
+    @include media-breakpoint-up(lg) {
+      padding-inline-start: 0;
+    }
+
+    &.active::after {
+      position: absolute;
+      top: to-rem(6);
+      bottom: to-rem(6);
+      left: to-rem(0);
+      width: to-rem(3);
+      height: auto;
+      content: "";
+      background-color: bs.$primary;
+      border-radius: 100%;
+
+      @include media-breakpoint-up(lg) {
+        top: unset;
+        bottom: to-rem(6);
+        left: to-rem(8);
+        width: calc(100% - to-rem(16));
+        height: to-rem(2);
+      }
+    }
+  }
+}
