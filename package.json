@@ -24,7 +24,9 @@
   },
   "sass": {
     "quietDeps": true,
-    "silenceDeprecations": ["import"]
+    "silenceDeprecations": [
+      "import"
+    ]
   },
   "repository": {
     "type": "git",
@@ -57,6 +59,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.8",
-    "bootstrap-icons": "^1.13.1"
+    "bootstrap-icons": "^1.13.1",
+    "photoswipe": "^5.4.4"
   }
 }
