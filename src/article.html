@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html lang="ca">
+<include src="./views/head.html">
+  {
+      "title": "4ª edició | Jornades d'artesania",
+      "description": "Un cap de setmana dedicat als oficis, creativitat i diàleg entre tradició i futur a Mallorca."
+  }
+</include>
+<body>
+  <include src="./views/header.html">{ "activePage": "article" }</include>
+
+  <main>
+    <article class="article">
+      <header class="article__hero">
+        <picture>
+          <source type="image/avif" srcset="./assets/images/gallery/people-building-their-own-dried-arrangement.jpg?as=avif&width=1920">
+          <source type="image/webp" srcset="./assets/images/gallery/people-building-their-own-dried-arrangement.jpg?as=webp&width=1920">
+          <img src="./assets/images/gallery/people-building-their-own-dried-arrangement.jpg?width=1920" alt="Fotografia del taller de cistelleria amb fibres naturals">
+        </picture>
+
+        <div class="article__title">
+          <div class="container col-md-8 col-lg-7 col-xl-6 col-xxl-5 text-white py-4">
+            <p class="badge bg-light text-primary rounded-1">Fires i festes</p>
+            <h1>Petra celebra la 4ª edició de les Jornades d'Artesania</h1>
+            <hr class="w-25 border-3 border-secondary opacity-100">
+            <p>Escrit per: <b>Jordi Roca</b></p>
+          </div>
+        </div>
+      </header>
+
+      <div class="container col-md-8 col-lg-7 col-xl-6 col-xxl-5">
+
+        <div class="row mb-3 mt-2">
+
+          <div class="col-md-6 mt-2 mt-md-5">
+            <h3 class="fw-normal lh-base h4">Un cap de setmana dedicat als oficis, creativitat i diàleg entre tradició i futur a Mallorca.</h3>
+          </div>
+
+          <div class="col-md-6 mt-2 mt-md-5">
+            <p>Les Jornades d'Artesania tornen a Petra amb una proposta que combina formació, demostració i reflexió al voltant dels oficis artesans. </p>
+            <p>Durant dos dies, el Passeig dels Arcs de Ferro i el Pavelló de les Arts Aplicades es convertiran en un espai obert on professionals i públic podran compartir coneixement i experiències en directe.</p>
+          </div>
+
+        </div>
+
+        <p>
+          Aquesta quarta edició posa l'accent en el valor del procés, en la importància dels materials i en la capacitat de l'artesania
+          per adaptar-se als nous temps sense perdre identitat. Tallers pràctics, demostracions en viu i una taula rodona configuren
+          un programa pensat per inspirar, aprendre i fomentar el diàleg entre disciplines.
+        </p>
+        <p>Algunes de les propostes destacades són:</p>
+
+        <ol class="list-group list-group-numbered py-2">
+          <li class="list-group-item bg-light border-bottom">
+            <p class="h6 mb-1">Taller de ceràmica amb Ernest Vargas</p>
+            <p>Espai pràctic dedicat a la recuperació de tècniques tradicionals de cocció contraposant la ceràmica històrica i la creació contemporània.</p>
+          </li>
+
+          <li class="list-group-item bg-light border-bottom">
+            <p class="h6 mb-1">Taula rodona: L'Artesania com a futur sostenible</p>
+            <p>Un lloc de reflexió sobre el paper dels oficis en el context actual, la sostenibilitat dels materials i la relació entre innovació i tradició.</p>
+          </li>
+
+          <li class="list-group-item bg-light">
+            <p class="h6 mb-1">Demostració en viu de tècniques de vidre bufat</p>
+            <p>Una mostra en directe del procés artesanal del vidre, que permet observar la precisió i la destresa necessàries per transformar la matèria en peça final.</p>
+          </li>
+        </ol>
+
+        <blockquote class="blockquote border-start border-4 border-secondary ps-4 my-5">
+            <p class="mb-0">“L'artesania no només conserva tradicions, sinó que les actualitza i les projecta cap al futur.”</p>
+        </blockquote>
+
+        <p>
+          Amb la participació de mestres i creadors de diferents àmbits —des de la ceràmica fins a la joieria conceptual, passant
+          per l'ebenisteria d'autor, el teixit sostenible i el cuir— les jornades ofereixen una visió àmplia i contemporània dels oficis.
+          Cada intervenció aporta una perspectiva pròpia, però totes comparteixen una mateixa mirada: el respecte pel treball ben fet
+          i la recerca constant de qualitat.
+        </p>
+
+        <p>
+          Com cada any, les jornades també inclouen un acte d'entrega de premis que reconeix la trajectòria i la innovació dins l'àmbit
+          artesanal. Aquest moment especial celebra el talent, l'esforç i la dedicació dels professionals que contribueixen a mantenir vius
+          els oficis i a projectar-los cap al futur.
+        </p>
+
+        <figure>
+          <picture>
+            <source type="image/avif" srcset="./assets/images/gallery/female-business-executive-receiving-award.jpg?as=avif&width=790">
+            <source type="image/webp" srcset="./assets/images/gallery/female-business-executive-receiving-award.jpg?as=webp&width=790">
+            <img class="img-fluid rounded mt-2 mb-1" src="./assets/images/gallery/female-business-executive-receiving-award.jpg?width=790" alt="Dues persones dalt d'un escenari lliurant un guardó o diploma davant d'un públic que aplaudeix des de la foscor">
+          </picture>
+          <figcaption class="small mb-4 text-primary">Fotografia de l'entrega de premis de l'any 2025</figcaption>
+        </figure>
+
+        <p>
+          El concert de cloenda amb instruments de luthier posarà el punt final a l'esdeveniment, en un ambient que vol celebrar la feina
+          manual com a expressió cultural. Les Jornades d'Artesania es consoliden així com un espai de trobada imprescindible per a qui vulgui
+          descobrir, aprofundir o simplement deixar-se inspirar per l'univers del fet a mà.
+        </p>
+
+      </div>
+    </article>
+
+    <include src="./views/article/cta.html"></include>
+  </main>
+
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+</html>

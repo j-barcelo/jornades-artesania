@@ -1,0 +1,22 @@
+@use "../../bootstrap-variables.scss" as bs;
+@use "../../functions" as *;
+
+.blockquote {
+    position: relative;
+    z-index: 1;
+    padding-right: to-rem(48);
+
+    &::after {
+        position: absolute;
+        top: to-rem(-20);
+        right: to-rem(-8);
+        z-index: -1;
+        font-family: bs.$headings-font-family;
+        font-size: to-rem(110);
+        line-height: 1;
+        color: color-mix(in srgb, bs.$body-bg, bs.$primary 10%);
+        pointer-events: none;
+        user-select: none;
+        content: '”';
+    }
+}

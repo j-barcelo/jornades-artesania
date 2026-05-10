@@ -1,0 +1,22 @@
+@use "../../bootstrap-variables.scss" as bs;
+@use "../../functions" as *;
+
+.list-group-item {
+    position: relative;
+    padding: to-rem(24) to-rem(0);
+    padding-right: to-rem(40);
+    padding-left: to-rem(72);
+
+    &::before {
+        position: absolute;
+        top: to-rem(28);
+        left: to-rem(28);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: bs.$headings-font-family;
+        font-size: bs.$h4-font-size;
+        font-weight: 700;
+        color: bs.$secondary;
+    }
+}
