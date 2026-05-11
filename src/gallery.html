@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="ca">
+<include src="./views/head.html">
+  {
+      "title": "Galeria | Jornades d'artesania",
+      "description": "Recull d'imatges de les anteriors jornades d'artesania."
+  }
+</include>
+<body>
+  <include src="./views/header.html">{ "activePage": "gallery" }</include>
+
+  <main>
+    <section class="gallery container py-5">
+      <div class="row my-4 gallery__header">
+        <header class="col-md-6 mt-5">
+          <h1>Imatges de les jornades</h1>
+          <p>
+            Recull d'alguns dels moments més destacats dels tallers i les trobades de les anteriors jornades, una selecció d'instants que reflecteixen l'ambient creatiu i la passió compartida pels oficis artesans.
+          </p>
+        </header>
+      </div>
+      <include src="./views/gallery/gallery.html"></include>
+
+    </section>
+  </main>
+
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script>
+  <script type="module" src="./assets/scripts/gallery.js"></script>
+</body>
+</html>

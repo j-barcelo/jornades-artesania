@@ -1,0 +1,9 @@
+<div class="gallery__item rounded {{ isVertical === 'true' ? 'gallery__item--vertical' : '' }}" data-year="{{ year }}" data-tags="{{ tag }}">
+  <a href="{{ img }}" data-pswp-width="{{ width }}" data-pswp-height="{{ height }}" data-cropped="true" target="_blank" rel="noreferrer" aria-label="{{ ariaLabel }}">
+    <picture>
+      <source type="image/avif" srcset="{{ img }}?as=avif&width=790">
+      <source type="image/webp" srcset="{{ img }}?as=webp&width=790">
+      <img src="{{ img }}?width=790" class="img-fluid" loading="lazy" alt="{{ alt }}" width="790">
+    </picture>
+  </a>
+</div>

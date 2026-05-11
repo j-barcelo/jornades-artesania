@@ -1,0 +1,162 @@
+<div class="row gallery__content">
+
+  <div class="gallery__filters">
+    <button class="text-primary btn btn-link text-decoration-none ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#galleryFilters" aria-expanded="false" aria-controls="galleryFilters">
+      <i class="bi bi-funnel"></i> Filtres
+    </button>
+
+    <button class="text-dark btn btn-link text-decoration-none d-none pe-3" id="clearFiltersBtn">
+      <i class="bi bi-x"></i> Reiniciar
+    </button>
+
+    <p class="text-primary ms-auto my-auto" aria-live="polite"><span id="galleryCount" class="fw-bold">9</span> imatges</p>
+  </div>
+
+  <div class="gallery__wrapper">
+
+    <form class="collapse gallery__filters-sidebar" id="galleryFilters">
+      <label for="yearFilter" class="form-label fw-bold h4 my-3">Any</label>
+      <select class="form-select mb-5" id="yearFilter">
+        <option value="">Tots els anys</option>
+        <option value="2025">2025</option>
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+      </select>
+
+      <fieldset class="d-flex flex-wrap gap-2 mb-3">
+        <legend class="form-label fw-bold d-block h5 mb-3">Etiquetes</legend>
+        <input type="checkbox" class="btn-check filter-tag" id="tagCeramica" value="ceramica" autocomplete="off">
+        <label class="btn btn-outline-primary" for="tagCeramica">Ceràmica</label>
+
+        <input type="checkbox" class="btn-check filter-tag" id="tagFusta" value="fusta" autocomplete="off">
+        <label class="btn btn-outline-primary" for="tagFusta">Fusta</label>
+
+        <input type="checkbox" class="btn-check filter-tag" id="tagTextil" value="textil" autocomplete="off">
+        <label class="btn btn-outline-primary" for="tagTextil">Tèxtil</label>
+
+        <input type="checkbox" class="btn-check filter-tag" id="tagVidre" value="vidre" autocomplete="off">
+        <label class="btn btn-outline-primary" for="tagVidre">Vidre</label>
+      </fieldset>
+    </form>
+
+    <div class="gallery__grid">
+      <include src="./views/gallery/gallery-image.html">
+        {
+        "isVertical": "true",
+        "img": "./assets/images/gallery/female-business-executive-receiving-award.jpg",
+        "alt": "Dues persones dalt d'un escenari lliurant un guardó o diploma davant d'un públic que aplaudeix des de la foscor",
+        "ariaLabel": "Obrir en gran la imatge de l'entrega de premis",
+        "year": "2025",
+        "tag": "textil",
+        "width": "8688",
+        "height": "5792"
+        }
+      </include>
+
+      <include src="./views/gallery/gallery-image.html">
+        {
+          "isVertical": "false",
+          "img": "./assets/images/gallery/making-handmade-clay-pot-pottery-lesson-with-master.jpg",
+          "alt": "Primer pla de les mans de tres persones treballant una peça de ceràmica sobre un torn manual en un taller",
+          "ariaLabel": "Obrir en gran la imatge del taller de ceràmica",
+          "year": "2024",
+          "tag": "ceramica",
+          "width": "6000",
+          "height": "4000"
+        }
+      </include>
+
+      <include src="./views/gallery/gallery-image.html">
+        {
+        "isVertical": "false",
+        "img": "./assets/images/gallery/mexican-culture-with-potted-plants-hanging.jpg",
+        "alt": "Diversos testos de ceràmica penjats amb la tècnica del macramé amb cordes de colors vius en un mercat a l'aire lliure",
+        "ariaLabel": "Obrir en gran la imatge de la ceràmica de la fira",
+        "year": "2025",
+        "tag": "fusta",
+        "width": "5184",
+        "height": "3456"
+        }
+      </include>
+
+      <include src="./views/gallery/gallery-image.html">
+        {
+        "isVertical": "false",
+        "img": "./assets/images/gallery/miscellaneous-items-being-sold-yard-sale.jpg",
+        "alt": "Parada del mercat amb una gran col·lecció de gerres, bols i objectes decoratius de llautó i metall cisellat",
+        "ariaLabel": "Obrir en gran la imatge dels productes de la fira",
+        "year": "2023",
+        "tag": "vidre",
+        "width": "6952",
+        "height": "10000"
+        }
+      </include>
+
+      <include src="./views/gallery/gallery-image.html">
+        {
+        "isVertical": "false",
+        "img": "./assets/images/gallery/people-building-their-own-dried-arrangement.jpg",
+        "alt": "Dues persones assegudes en una taula de fusta rústica treballant amb fibres vegetals naturals",
+        "ariaLabel": "Obrir en gran la imatge de fibres naturals",
+        "year": "2024",
+        "tag": "fusta",
+        "width": "7952",
+        "height": "5304"
+        }
+      </include>
+
+      <include src="./views/gallery/gallery-image.html">
+        {
+        "isVertical": "true",
+        "img": "./assets/images/gallery/portrait-young-woman-enjoying-favorite-job-workshop-potter-carefully-works-clay-whale.jpg",
+        "alt": "Una dona asseguda en un taller d'escultura somrient a càmera mentre manipula una estructura metàl·lica amb peces de fang",
+        "ariaLabel": "Obrir en gran la imatge de la mostra d'escultura en viu",
+        "year": "2025",
+        "tag": "ceramica",
+        "width": "6000",
+        "height": "4000"
+        }
+      </include>
+
+      <include src="./views/gallery/gallery-image.html">
+        {
+        "isVertical": "true",
+        "img": "./assets/images/gallery/side-view-man-clay-sculpting-indoors.jpg",
+        "alt": "Un artesà amb davantal tacat treballant intensament el fang en un torn de terrissaire elèctric dins d'un taller",
+        "ariaLabel": "Obrir en gran la imatge del taller de ceràmica",
+        "year": "2024",
+        "tag": "ceramica",
+        "width": "7999",
+        "height": "5332"
+        }
+      </include>
+
+      <include src="./views/gallery/gallery-image.html">
+        {
+        "isVertical": "false",
+        "img": "./assets/images/gallery/side-view-young-people-flea-market.jpg",
+        "alt": "Dues noies joves mirant detingudament llibres o làmines en una parada del mercat",
+        "ariaLabel": "Obrir en gran la imatge del mercat",
+        "year": "2023",
+        "tag": "textil",
+        "width": "4309",
+        "height": "6464"
+        }
+      </include>
+
+      <include src="./views/gallery/gallery-image.html">
+        {
+        "isVertical": "true",
+        "img": "./assets/images/gallery/woman-looking-clothes-side-view.jpg",
+        "alt": "Detall de roba artesanal feta de ganxet amb patrons de colors penjada en una parada del mercat",
+        "ariaLabel": "Obrir en gran la imatge del mercat de roba",
+        "year": "2025",
+        "tag": "textil",
+        "width": "6592",
+        "height": "4395"
+        }
+      </include>
+
+    </div>
+  </div>
+</div>

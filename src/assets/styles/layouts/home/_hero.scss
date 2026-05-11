@@ -34,6 +34,7 @@
   height: 85vh;
   min-height: to-rem(840);
   padding-top: to-rem(96);
+  text-shadow: to-rem(0) to-rem(2) to-rem(4) rgba(bs.$primary, 0.8);
 
   &__grid {
     display: flex;
@@ -83,12 +84,15 @@
         inset: 0;
         z-index: -1;
         content: "";
-        background: radial-gradient(ellipse 120% 60% at 0 40%, rgba(bs.$primary, 0.45) 68%, transparent 100%);
+        background: radial-gradient(ellipse 120% 60% at 0 40%, rgba(bs.$primary, 0.4) 68%, transparent 100%);
         filter: blur(to-rem(16)); 
       }
+
+      & i { text-shadow: none; }
     }
     
     &-btn {
+      text-shadow: none;
       transition: transform 0.3s ease;
 
       &:hover{
@@ -157,5 +161,6 @@
 
   &__countdown-msg {
     width: fit-content;
+    text-shadow: none;
   }
 }
