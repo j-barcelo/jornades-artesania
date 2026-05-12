@@ -14,7 +14,7 @@
         font-family: bs.$headings-font-family;
         font-size: to-rem(110);
         line-height: 1;
-        color: color-mix(in srgb, bs.$body-bg, bs.$primary 10%);
+        color: color-mix(in oklch, bs.$body-bg, bs.$primary 10%);
         pointer-events: none;
         user-select: none;
         content: '”';

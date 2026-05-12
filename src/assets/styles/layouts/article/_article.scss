@@ -2,6 +2,12 @@
 @use "../../functions" as *;
 
 .article {
+    & :where(h1, h2, h3) {
+        line-height: 1.2;
+        color: bs.$primary;
+        text-wrap-style: balance;
+    }
+
     &__hero {
         position: relative;
         min-height: to-rem(800);
@@ -27,8 +33,24 @@
                 rgba(bs.$dark ,0.6) 45%,
                 rgba(bs.$dark ,0.8) 100%);
         
-        h1 {
+        h1 { 
+            color: bs.$light;
             text-shadow: to-rem(0) to-rem(2) to-rem(4) rgba(bs.$dark ,0.5);
         }
+    }
+
+    &__body {
+        &:has(> p:first-child) > p:first-child::first-letter {
+            float: left;
+            margin-right: to-rem(8);
+            font-family: bs.$headings-font-family;
+            font-size: bs.$h1-font-size;
+            font-weight: 700;
+            line-height: 0.8;
+            color: bs.$secondary
+        }
+
+        h2 { font-size: bs.$h4-font-size; }
+        h3 { font-size: bs.$h5-font-size; }
     }
 }

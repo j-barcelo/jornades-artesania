@@ -5,7 +5,7 @@
   background-color: bs.$light;
 
   &--mod {
-    background-color: color-mix(in srgb, bs.$body-bg, bs.$primary 7%);
+    background-color: color-mix(in oklch, bs.$body-bg, bs.$primary 7%);
   }
 
   &__btn {

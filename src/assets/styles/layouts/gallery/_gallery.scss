@@ -44,7 +44,7 @@
       height: to-rem(480);
       pointer-events: none;
       content: "";
-      background-color: color-mix(in srgb, bs.$body-bg, bs.$primary 7%);
+      background-color: color-mix(in oklch, bs.$body-bg, bs.$primary 7%);
       mask-image: url("../images/Blob.svg");
       mask-repeat: no-repeat;
       mask-position: 50%;

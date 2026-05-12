@@ -61,7 +61,7 @@ export default {
     "function-url-quotes": "always",
     "function-linear-gradient-no-nonstandard-direction": true,
     "selector-pseudo-element-colon-notation": "double",
-    "selector-max-compound-selectors": 2,
+    "selector-max-compound-selectors": 3,
     "selector-attribute-quotes": "always",
     "custom-property-empty-line-before": ["always", {
       "except": ["after-comment", "after-custom-property", "first-nested"]

@@ -1,8 +1,11 @@
 @use "../../functions" as *;
+@use "../../mixins" as *;
 
 .speakers-card {
   &:nth-child(3n+2) {
-    transform: translateY(to-rem(32));
+    @include media-breakpoint-up(lg) {
+      transform: translateY(to-rem(32));
+    }
   }
 
   &__img {
